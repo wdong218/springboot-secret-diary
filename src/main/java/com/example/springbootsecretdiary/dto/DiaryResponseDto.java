@@ -1,8 +1,18 @@
 package com.example.springbootsecretdiary.dto;
+import com.example.springbootsecretdiary.domain.Diary;
 import lombok.Getter;
-import lombok.Setter;
 
 @Getter
-@Setter // get,set 메소드를 자동으로 만들어주는 어노테이션
 public class DiaryResponseDto {
+    private final Long id;
+    private final String title;
+    private final String content;
+    private final String author;
+
+    public DiaryResponseDto(Diary diary) {
+        this.id = diary.getId();
+        this.title = diary.getTitle();
+        this.content = diary.getContent();
+        this.author = diary.getAuthor();
+    }
 }
