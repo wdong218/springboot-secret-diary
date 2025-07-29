@@ -4,6 +4,7 @@ import com.example.springbootsecretdiary.domain.Diary;
 import com.example.springbootsecretdiary.dto.DiaryRequestDto;
 import com.example.springbootsecretdiary.dto.DiaryResponseDto;
 import com.example.springbootsecretdiary.repository.DiaryRepository;
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -35,6 +36,7 @@ public class DiaryService {
 
 
     // 수정 기능 구현
+    @Transactional
     public void updateDiary(Long id, DiaryRequestDto diaryRequestDto, String password) {
         Diary diary = diaryRepository.findById(id)
                 .orElseThrow(() -> new IllegalArgumentException("Diary not found with id: " + id));
