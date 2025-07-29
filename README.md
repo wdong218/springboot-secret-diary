@@ -64,7 +64,7 @@ src/
 ├── dto/
 ├── repository/
 └── service/
-
+---
 ## 📑 상세 기록 (Notion)
 👉 Notion 링크 바로가기(https://peridot-chicken-4e7.notion.site/23f26275352480ab8cd1c93817a9eb39?source=copy_link)
 
