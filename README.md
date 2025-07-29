@@ -72,7 +72,7 @@ src/
 🧪 실행 방법
 프로젝트 클론
 
-bash
+```bash
 git clone https://github.com/your-repo/secret-diary.git
 IDE(IntelliJ 등)로 열기
 
