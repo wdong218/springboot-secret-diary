@@ -29,4 +29,10 @@ public class Diary {
         // JPA 기본 생성자
         // 밑에 생성자가 있었음에도 기본 생성자를 생성해야됨
     }
+    // update 메서드도 있으면 좋음
+    public void update(String title, String content, String author) {
+        this.title = title;
+        this.content = content;
+        this.author = author;
+    }
 }
