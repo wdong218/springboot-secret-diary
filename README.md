@@ -67,7 +67,7 @@ src/
 ```
 ---
 ## 📑 상세 기록 (Notion)
-👉 [Notion 링크 바로가기](https://peridot-chicken-4e7.notion.site/23f26275352480ab8cd1c93817a9eb39?source=copy_link)
+👉 [상세 API 요청/응답 예시 및 개발 과정 보기 (Notion)](https://peridot-chicken-4e7.notion.site/23f26275352480ab8cd1c93817a9eb39?source=copy_link)
 
 
 🧪 실행 방법
@@ -86,9 +86,9 @@ Postman으로 API 테스트
 
 작성: POST /diary
 
-조회: GET /diary/{id}?password=1234
+조회: GET /diary/id?password=1234
 
-수정: PUT /diary/{id}?password=1234
+수정: PUT /diary/id?password=1234
 
-삭제: DELETE /diary/{id}?password=1234
+삭제: DELETE /diary/id?password=1234
 
